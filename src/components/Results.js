@@ -9,7 +9,13 @@ const Results=({list})=>{
 
             {
                 list.map((item,index)=>{
-                    return <Result title={item.title} key={index}/>
+                    return <Result 
+                    title={item.title} 
+                    publish_year={item.publish_year}
+                    author_name={item.author_name}
+                    publisher={item.publisher}
+                    subject={item.subject}
+                    key={index}/>
                 })
             }
         </div>

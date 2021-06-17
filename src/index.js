@@ -22,6 +22,7 @@ const App = ()=>{
         .then(response=>response.json())
         .then(data=>{
             setResults(data.docs)
+            console.log(data.docs)
         })
 
         .catch(err=>console.log(err))
